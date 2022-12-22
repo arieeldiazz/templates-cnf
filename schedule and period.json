@@ -1,0 +1,63 @@
+//schedule
+{
+  "type": {
+    "S": "schedule"
+  },
+  "name": {
+    "S": "mon-fri-start-0600-stop-1300"
+  },
+  "description": {
+    "S": "Apagado de Lunes a Viernes FDS Apagado"
+  },
+  "enforced": {
+    "BOOL": false
+  },
+  "hibernate": {
+    "BOOL": false
+  },
+  "periods": {
+    "SS": [
+      "mon-fri-start-0600-stop-1300"
+    ]
+  },
+  "retain_running": {
+    "BOOL": false
+  },
+  "stop_new_instances": {
+    "BOOL": true
+  },
+  "timezone": {
+    "S": "America/Santiago"
+  },
+  "use_maintenance_window": {
+    "BOOL": false
+  },
+  "use_metrics": {
+    "BOOL": false
+  }
+}
+
+
+//Period
+{
+    "type": {
+      "S": "period"
+    },
+    "name": {
+      "S": "mon-fri-start-0600-stop-1300"
+    },
+    "begintime": {
+      "S": "06:00"
+    },
+    "description": {
+      "S": "Apagado de Lunes a Viernes FDS Apagado"
+    },
+    "endtime": {
+      "S": "13:00"
+    },
+    "weekdays": {
+      "SS": [
+        "mon-fri"
+      ]
+    }
+  }
